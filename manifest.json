@@ -1,0 +1,14 @@
+{
+  "name": "Chrome GPT",
+  "version": "1.0.0",
+  "description": "Generates a question about the current webpage using the GPT-3 API.",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "dist/bundle.js"
+  },
+  "permissions": ["activeTab", "storage"],
+  "options_page": "options.html"
+}
